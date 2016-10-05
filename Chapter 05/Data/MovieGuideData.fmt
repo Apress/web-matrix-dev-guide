@@ -1,0 +1,15 @@
+8.0
+13
+1       SQLINT        0       4       ""                        1     InventoryID        ""
+2       SQLCHAR       0       50      ""                        2     Name               SQL_Latin1_General_CP1_CI_AS
+3       SQLCHAR       0       5       ""                        3     Rating             SQL_Latin1_General_CP1_CI_AS
+4       SQLCHAR       0       1000    ""                        4     Description        SQL_Latin1_General_CP1_CI_AS
+5       SQLCHAR       0       40      ""                        5     LeadActor          SQL_Latin1_General_CP1_CI_AS
+6       SQLCHAR       0       40      ""                        6     LeadActress        SQL_Latin1_General_CP1_CI_AS
+7       SQLCHAR       0       200     ""                        7     SupportingCast     SQL_Latin1_General_CP1_CI_AS
+8       SQLCHAR       0       40      ""                        8     Director           SQL_Latin1_General_CP1_CI_AS
+9       SQLCHAR       0       40      ""                        9     Producer           SQL_Latin1_General_CP1_CI_AS
+10      SQLCHAR       0       500     ""                        10    Notes              SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME   0       8       ""                        11    DatePurchased      ""
+12      SQLCHAR       0       10      ""                        12    Format             SQL_Latin1_General_CP1_CI_AS
+13      SQLBIT        0       1       ""                        13    IsIn               ""

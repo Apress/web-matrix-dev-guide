@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="PFormat.XSLT"?>
+<Performance>
+  <Item>
+    <Time>6:25:57 PM</Time>
+    <Data>0</Data>
+  </Item>
+  <Item>
+    <Time>6:25:58 PM</Time>
+    <Data>3.333333</Data>
+  </Item>
+  <Item>
+    <Time>6:25:59 PM</Time>
+    <Data>0.78125</Data>
+  </Item>
+  <Item>
+    <Time>6:26:00 PM</Time>
+    <Data>1.5625</Data>
+  </Item>
+  <Item>
+    <Time>6:26:01 PM</Time>
+    <Data>0</Data>
+  </Item>
+  <Item>
+    <Time>6:26:02 PM</Time>
+    <Data>2.34375</Data>
+  </Item>
+  <Item>
+    <Time>6:26:03 PM</Time>
+    <Data>0.78125</Data>
+  </Item>
+  <Item>
+    <Time>6:26:04 PM</Time>
+    <Data>0</Data>
+  </Item>
+  <Item>
+    <Time>6:26:05 PM</Time>
+    <Data>14.0625</Data>
+  </Item>
+  <Item>
+    <Time>6:26:06 PM</Time>
+    <Data>13.28125</Data>
+  </Item>
+  <Item>
+    <Time>6:26:07 PM</Time>
+    <Data>6.25</Data>
+  </Item>
+</Performance>

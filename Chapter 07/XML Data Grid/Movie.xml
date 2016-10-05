@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MovieDS xmlns="http://www.tempuri.org/MovieDS.xsd">
+  <ExistingMovies>
+    <InventoryID>1</InventoryID>
+    <Name>Eraser                                            </Name>
+    <Rating>R    </Rating>
+    <Description>Schwarzenegger plays a marshall who erases the lives and identities of people entering the witness protection program.</Description>
+    <LeadActor>Arnold Schwarzenegger                   </LeadActor>
+    <LeadActress>Vanessa Williams                        </LeadActress>
+    <SupportingCast>James Caan, James Coburn, Robert Pastorelli                                                                                                                                                             </SupportingCast>
+    <Director>Charles Russell                         </Director>
+    <Producer>Arnold Kopelson                         </Producer>
+    <Notes>115 minute running time. Violence and some strong language.</Notes>
+    <DatePurchased>2001-12-20T00:00:00.0000000-06:00</DatePurchased>
+    <Format>VHS       </Format>
+    <IsIn>true</IsIn>
+  </ExistingMovies>
+  <ExistingMovies>
+    <InventoryID>5</InventoryID>
+    <Name>Down Periscope                                    </Name>
+    <Rating>PG-13</Rating>
+    <Description>Kelsey Grammar commands a submarine filled with misfits. After taking on the US Navy and winning, Grammar is given a command of his own.</Description>
+    <LeadActor>Kelsey Grammar                          </LeadActor>
+    <LeadActress>Lauren Holly                            </LeadActress>
+    <SupportingCast>Rob Schneider, Harry Dean Stanton, Bruce Dern, and Rip Torn                                                                                                                                             </SupportingCast>
+    <Director>David S. Ward                           </Director>
+    <Producer>Robert Lawrence                         </Producer>
+    <Notes>93 minute running time
+Many patrons have mentioned how funny this movie is, so we'll want to get an extra copy or two.</Notes>
+    <DatePurchased>2002-02-02T17:15:00.0000000-06:00</DatePurchased>
+    <Format>VHS       </Format>
+    <IsIn>false</IsIn>
+  </ExistingMovies>
+  <ExistingMovies>
+    <InventoryID>6</InventoryID>
+    <Name>Blood Sport                                       </Name>
+    <Rating>R    </Rating>
+    <Description>Jean Claud Van Damme plays Frank Dux, a martial arts expert playing in the most dangerous game of all, Kumite.</Description>
+    <LeadActor>Jean Claude Van Damme                   </LeadActor>
+    <LeadActress>Leah Areys                              </LeadActress>
+    <SupportingCast>Roy Chiao and Donald Gibb                                                                                                                                                                               </SupportingCast>
+    <Director>N/A                                     </Director>
+    <Producer>N/A                                     </Producer>
+    <Notes>92 minute running time. Violence and some strong language</Notes>
+    <DatePurchased>2002-01-31T15:54:33.0000000-06:00</DatePurchased>
+    <Format>VHS       </Format>
+    <IsIn>true</IsIn>
+  </ExistingMovies>
+  <ExistingMovies>
+    <InventoryID>7</InventoryID>
+    <Name>Live and Let Die                                  </Name>
+    <Rating>PG   </Rating>
+    <Description>Roger Moore plays James Bond in pursuit of Dr. Kananga, a heroin grower and dealer.</Description>
+    <LeadActor>Roger Moore                             </LeadActor>
+    <LeadActress>Jane Seymour                            </LeadActress>
+    <SupportingCast>Yaphet Kotto and Geoffrey Holder                                                                                                                                                                        </SupportingCast>
+    <Director>Guy Hamilton                            </Director>
+    <Producer>Harry Saltzman and Albert Broccoli      </Producer>
+    <Notes>121 minutes running time</Notes>
+    <DatePurchased>2002-01-11T00:00:00.0000000-06:00</DatePurchased>
+    <Format>VHS       </Format>
+    <IsIn>true</IsIn>
+  </ExistingMovies>
+  <ExistingMovies>
+    <InventoryID>8</InventoryID>
+    <Name>The Sound of Music                                </Name>
+    <Rating>G    </Rating>
+    <Description>A warm, romantic musical about a young nun who decides to leave her religious order to become the mother of 7 children.</Description>
+    <LeadActor>Christopher Plummer                     </LeadActor>
+    <LeadActress>Julie Andrews                           </LeadActress>
+    <SupportingCast>Richard Haydn, Peggy Wood, Charmian Carr, and Eleanor Parker                                                                                                                                            </SupportingCast>
+    <Director>Robert Wise                             </Director>
+    <Producer>Robert Wise                             </Producer>
+    <Notes>172 minutes running time</Notes>
+    <DatePurchased>2001-10-10T00:00:00.0000000-05:00</DatePurchased>
+    <Format>VHS       </Format>
+    <IsIn>true</IsIn>
+  </ExistingMovies>
+  <ExistingMovies>
+    <InventoryID>11</InventoryID>
+    <Name>True Lies                                         </Name>
+    <Rating>R    </Rating>
+    <Description>A spy tries to keep his home life separated from his professional life. All goes well until circumstance and fate send his life, and that of his family, over the edge.</Description>
+    <LeadActor>Arnold Schwarzenegger                   </LeadActor>
+    <LeadActress>Jamie Lee Curtis                        </LeadActress>
+    <SupportingCast>Tom Arnold, Bill Paxton, Tia Carrere, Art Malik, Eliza Dushku, Grant Heslov, and Charlton Heston                                                                                                        </SupportingCast>
+    <Director>James Cameron                           </Director>
+    <Producer>Lightstorm Entertainment                </Producer>
+    <Notes>141 minutes running time.</Notes>
+    <DatePurchased>2001-10-30T00:00:00.0000000-06:00</DatePurchased>
+    <Format>Laser     </Format>
+    <IsIn>true</IsIn>
+  </ExistingMovies>
+</MovieDS>

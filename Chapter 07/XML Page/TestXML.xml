@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<PhoneMessages>
+    <Date Day="09/16/02">
+        <Message Name="George">
+            "Hello, Sorry I missed you!"
+        </Message>
+        <Message Name="Sam">
+            "Are you gone again?"
+        </Message>
+    </Date>
+    <Date Day="09/17/02">
+        <Message Name="Ann">
+            "Want to go fishing Thursday?"
+        </Message>
+    </Date>
+    <Date Day="09/18/02">
+        <Message Name="Jerry">
+            "Hope to see you tomorrow!"
+        </Message>
+        <Message Name="Samantha">
+            "Call the office ASAP!"
+        </Message>
+        <Message Name="Jan">
+            "Give me a call at work!"
+        </Message>
+    </Date>
+</PhoneMessages>

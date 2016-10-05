@@ -1,0 +1,29 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\.cfm]
+@="cfmfile"
+
+[HKEY_CLASSES_ROOT\cfmfile]
+"EditFlags"=dword:00000000
+"BrowserFlags"=dword:00000008
+@="Cold Fusion File"
+
+[HKEY_CLASSES_ROOT\cfmfile\DefaultIcon]
+@="D:\\Program Files\\Microsoft ASP.NET Web Matrix\\v0.5.464\\Templates\\cfm\\CfmFileLarge.ico"
+
+[HKEY_CLASSES_ROOT\cfmfile\shell]
+@=""
+
+[HKEY_CLASSES_ROOT\cfmfile\shell\Open_with_Web_Matrix]
+@="Open with Web Matrix"
+
+[HKEY_CLASSES_ROOT\cfmfile\shell\Open_with_Web_Matrix\command]
+@="\"D:\\Program Files\\Microsoft ASP.NET Web Matrix\\v0.5.464\\WebMatrix.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\cfmfile\shell\Open_with_Web_Matrix\ddeexec]
+
+[HKEY_CLASSES_ROOT\cfmfile\shell\Open_with_Web_Matrix\ddeexec\Application]
+@="WebMatrix"
+
+[HKEY_CLASSES_ROOT\cfmfile\shell\Open_with_Web_Matrix\ddeexec\Topic]
+@="System"

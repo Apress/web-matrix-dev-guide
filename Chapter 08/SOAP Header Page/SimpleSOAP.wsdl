@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://winserver/0131/WebService/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://winserver/0131/WebService/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://winserver/0131/WebService/">
+      <s:element name="GetValueOfSoapHeader">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetValueOfSoapHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValueOfSoapHeaderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SimpleHeader" type="s0:SimpleHeader" />
+      <s:complexType name="SimpleHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ReverseIt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Input" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReverseItResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReverseItResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RequiredSoapHeader">
+        <s:complexType />
+      </s:element>
+      <s:element name="RequiredSoapHeaderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RequiredSoapHeaderResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </types>
+  <message name="GetValueOfSoapHeaderSoapIn">
+    <part name="parameters" element="s0:GetValueOfSoapHeader" />
+  </message>
+  <message name="GetValueOfSoapHeaderSoapOut">
+    <part name="parameters" element="s0:GetValueOfSoapHeaderResponse" />
+  </message>
+  <message name="GetValueOfSoapHeaderSimpleHeader">
+    <part name="SimpleHeader" element="s0:SimpleHeader" />
+  </message>
+  <message name="ReverseItSoapIn">
+    <part name="parameters" element="s0:ReverseIt" />
+  </message>
+  <message name="ReverseItSoapOut">
+    <part name="parameters" element="s0:ReverseItResponse" />
+  </message>
+  <message name="ReverseItSimpleHeader">
+    <part name="SimpleHeader" element="s0:SimpleHeader" />
+  </message>
+  <message name="RequiredSoapHeaderSoapIn">
+    <part name="parameters" element="s0:RequiredSoapHeader" />
+  </message>
+  <message name="RequiredSoapHeaderSoapOut">
+    <part name="parameters" element="s0:RequiredSoapHeaderResponse" />
+  </message>
+  <message name="RequiredSoapHeaderSimpleHeader">
+    <part name="SimpleHeader" element="s0:SimpleHeader" />
+  </message>
+  <message name="GetValueOfSoapHeaderHttpGetIn" />
+  <message name="GetValueOfSoapHeaderHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ReverseItHttpGetIn">
+    <part name="Input" type="s:string" />
+  </message>
+  <message name="ReverseItHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetValueOfSoapHeaderHttpPostIn" />
+  <message name="GetValueOfSoapHeaderHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="ReverseItHttpPostIn">
+    <part name="Input" type="s:string" />
+  </message>
+  <message name="ReverseItHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <portType name="SOAPSampleSoap">
+    <operation name="GetValueOfSoapHeader">
+      <documentation>Displays the SOAP header type received</documentation>
+      <input message="s0:GetValueOfSoapHeaderSoapIn" />
+      <output message="s0:GetValueOfSoapHeaderSoapOut" />
+    </operation>
+    <operation name="ReverseIt">
+      <documentation>This method reverses text.</documentation>
+      <input message="s0:ReverseItSoapIn" />
+      <output message="s0:ReverseItSoapOut" />
+    </operation>
+    <operation name="RequiredSoapHeader">
+      <documentation>This method requires the SOAP header.</documentation>
+      <input message="s0:RequiredSoapHeaderSoapIn" />
+      <output message="s0:RequiredSoapHeaderSoapOut" />
+    </operation>
+  </portType>
+  <portType name="SOAPSampleHttpGet">
+    <operation name="GetValueOfSoapHeader">
+      <documentation>Displays the SOAP header type received</documentation>
+      <input message="s0:GetValueOfSoapHeaderHttpGetIn" />
+      <output message="s0:GetValueOfSoapHeaderHttpGetOut" />
+    </operation>
+    <operation name="ReverseIt">
+      <documentation>This method reverses text.</documentation>
+      <input message="s0:ReverseItHttpGetIn" />
+      <output message="s0:ReverseItHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="SOAPSampleHttpPost">
+    <operation name="GetValueOfSoapHeader">
+      <documentation>Displays the SOAP header type received</documentation>
+      <input message="s0:GetValueOfSoapHeaderHttpPostIn" />
+      <output message="s0:GetValueOfSoapHeaderHttpPostOut" />
+    </operation>
+    <operation name="ReverseIt">
+      <documentation>This method reverses text.</documentation>
+      <input message="s0:ReverseItHttpPostIn" />
+      <output message="s0:ReverseItHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="SOAPSampleSoap" type="s0:SOAPSampleSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetValueOfSoapHeader">
+      <soap:operation soapAction="http://winserver/0131/WebService/GetValueOfSoapHeader" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:GetValueOfSoapHeaderSimpleHeader" part="SimpleHeader" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="ReverseIt">
+      <soap:operation soapAction="http://winserver/0131/WebService/ReverseIt" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header message="s0:ReverseItSimpleHeader" part="SimpleHeader" use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="RequiredSoapHeader">
+      <soap:operation soapAction="http://winserver/0131/WebService/RequiredSoapHeader" style="document" />
+      <input>
+        <soap:body use="literal" />
+        <soap:header d5p1:required="true" message="s0:RequiredSoapHeaderSimpleHeader" part="SimpleHeader" use="literal" xmlns:d5p1="http://schemas.xmlsoap.org/wsdl/" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SOAPSampleHttpGet" type="s0:SOAPSampleHttpGet">
+    <http:binding verb="GET" />
+    <operation name="GetValueOfSoapHeader">
+      <http:operation location="/GetValueOfSoapHeader" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="ReverseIt">
+      <http:operation location="/ReverseIt" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="SOAPSampleHttpPost" type="s0:SOAPSampleHttpPost">
+    <http:binding verb="POST" />
+    <operation name="GetValueOfSoapHeader">
+      <http:operation location="/GetValueOfSoapHeader" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="ReverseIt">
+      <http:operation location="/ReverseIt" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="SOAPSample">
+    <port name="SOAPSampleSoap" binding="s0:SOAPSampleSoap">
+      <soap:address location="http://winserver/0131/WebService/SimpleSOAP.asmx" />
+    </port>
+    <port name="SOAPSampleHttpGet" binding="s0:SOAPSampleHttpGet">
+      <http:address location="http://winserver/0131/WebService/SimpleSOAP.asmx" />
+    </port>
+    <port name="SOAPSampleHttpPost" binding="s0:SOAPSampleHttpPost">
+      <http:address location="http://winserver/0131/WebService/SimpleSOAP.asmx" />
+    </port>
+  </service>
+</definitions>

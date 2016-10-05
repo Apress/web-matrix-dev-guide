@@ -1,0 +1,18 @@
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Header>
+        <t:Transaction 
+         xmlns:t="http://www.mycompany.com/myobjects/" 
+         SOAP-ENV:mustUnderstand="0">
+            1
+        </t:Transaction>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <MyObj:GetPerson xmlns:MyObj="http://www.mycompany.com/myobjects/">
+            <LastName>Mueller</LastName>
+            <FirstName>John</FirstName>
+        </MyObj:GetPerson>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

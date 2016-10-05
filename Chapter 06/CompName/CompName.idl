@@ -1,0 +1,51 @@
+// CompName.idl : IDL source for CompName
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (CompName.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+typedef enum MYCOMPUTER_NAME_FORMAT
+{
+    NetBIOS,
+    DnsHostname,
+    DnsDomain,
+    DnsFullyQualified,
+    PhysicalNetBIOS,
+    PhysicalDnsHostname,
+    PhysicalDnsDomain,
+    PhysicalDnsFullyQualified,
+    Max
+}MYCOMPUTER_NAME_FORMAT;
+
+[
+	object,
+	uuid(50AC7421-D5C1-4461-B291-805FB665FA91),
+	dual,
+	nonextensible,
+	helpstring("INameValues Interface"),
+	pointer_default(unique)
+]
+interface INameValues : IDispatch{
+   [id(1), helpstring("method GetCompName")] HRESULT GetCompName([in] MYCOMPUTER_NAME_FORMAT NameType, [out,retval] BSTR* Return);
+   [id(2), helpstring("method GetAllNames")] HRESULT GetAllNames([out,retval] BSTR* Return);
+};
+[
+	uuid(D400B4FB-4FD5-4498-AADB-70C0766FFC6E),
+	version(1.0),
+	helpstring("CompName 1.0 Type Library")
+]
+library CompNameLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(34E40BB8-826C-4E8B-960F-6226A97105D6),
+		helpstring("NameValues Class")
+	]
+	coclass NameValues
+	{
+		[default] interface INameValues;
+	};
+};

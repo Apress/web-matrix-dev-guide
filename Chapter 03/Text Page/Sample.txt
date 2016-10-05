@@ -1,0 +1,20 @@
+A simple text file can contain a lot of content in a small amount 
+of space. You don't have to worry about accessibility problems for 
+the most part, because text files don't contain anything that 
+could cause a screen reader to fail. This type of content also 
+works with any browser on any platform. In short, if you want to 
+provide content to the largest group of people possible, a text 
+file can't fail--at least in theory.
+
+    The biggest problem with text files is that you can't format 
+the information. It's in text and that's it. Sure, you can add a 
+little indention and add double spaces between paragraphs, but 
+that's about it. Consequently, text files aren't the glamour 
+solution to anyone's data presentation needs. You'll find them 
+used by some Web sites--notably educational, governmental, or 
+standards organizations, but they aren't used often anywhere else.
+
+    Even if text files aren't popular, Web Matrix provides support 
+for them. You'll find the Text File template in the (General) 
+category. When you create this template, all you need to supply is 
+a filename. Click OK and you'll see a new text file on screen.

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://winserver/0131/WebService/SimpleSOAP.asmx?wsdl" docRef="http://winserver/0131/WebService/SimpleSOAP.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://winserver/0131/WebService/SimpleSOAP.asmx" xmlns:q1="http://winserver/0131/WebService/" binding="q1:SOAPSampleSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

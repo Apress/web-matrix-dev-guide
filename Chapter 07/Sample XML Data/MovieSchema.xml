@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MovieDS" targetNamespace="http://www.tempuri.org/MovieDS.xsd" xmlns:mstns="http://www.tempuri.org/MovieDS.xsd" xmlns="http://www.tempuri.org/MovieDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="MovieDS" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="ExistingMovies">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InventoryID" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:int" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Rating" type="xs:string" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="LeadActor" type="xs:string" minOccurs="0" />
+              <xs:element name="LeadActress" type="xs:string" minOccurs="0" />
+              <xs:element name="SupportingCast" type="xs:string" minOccurs="0" />
+              <xs:element name="Director" type="xs:string" minOccurs="0" />
+              <xs:element name="Producer" type="xs:string" minOccurs="0" />
+              <xs:element name="Notes" type="xs:string" minOccurs="0" />
+              <xs:element name="DatePurchased" type="xs:dateTime" />
+              <xs:element name="Format" type="xs:string" />
+              <xs:element name="IsIn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ExistingMovies" />
+      <xs:field xpath="mstns:InventoryID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

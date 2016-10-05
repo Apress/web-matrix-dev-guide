@@ -1,0 +1,9 @@
+; PButton1.def : Declares the module parameters.
+
+LIBRARY      "PButton1.OCX"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

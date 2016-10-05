@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SampleData>
+   <NewDataElement>
+      <Data1>This is a data element.</Data1>
+      <Data2>This is another data element.</Data2>
+      <Data3>This is the third data element.</Data3>
+   </NewDataElement>
+   <NewDataElement>
+      <Data1>Data1 Record 2</Data1>
+      <Data2>Data2 Record 2</Data2>
+      <Data3>Data3 Record 2</Data3>
+   </NewDataElement>
+   <NewDataElement>
+      <Data1>Data1 Record 3</Data1>
+      <Data2>Data1 Record 3</Data2>
+      <Data3>Data1 Record 3</Data3>
+   </NewDataElement>
+</SampleData>

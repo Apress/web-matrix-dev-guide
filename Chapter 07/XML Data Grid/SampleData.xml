@@ -1,0 +1,58 @@
+<?xml version="1.0" standalone="yes"?>
+<SampleData>
+  <NewDataElement>
+    <Data1>This is a data element.</Data1>
+    <Data2>This is another data element.</Data2>
+    <Data3>This is the third data element.</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 2</Data1>
+    <Data2>Data2 Record 2</Data2>
+    <Data3>Data3 Record 2</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 3</Data1>
+    <Data2>Data2 Record 3</Data2>
+    <Data3>Data3 Record 3</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 4</Data1>
+    <Data2>Data2 Record 4</Data2>
+    <Data3>Data3 Record 4</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 5</Data1>
+    <Data2>Data2 Record 5</Data2>
+    <Data3>Data3 Record 5</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 6</Data1>
+    <Data2>Data2 Record 6</Data2>
+    <Data3>Data3 Record 6</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 7</Data1>
+    <Data2>Data2 Record 7</Data2>
+    <Data3>Data3 Record 7</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 8</Data1>
+    <Data2>Data2 Record 8</Data2>
+    <Data3>Data3 Record 8</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 9</Data1>
+    <Data2>Data2 Record 9</Data2>
+    <Data3>Data3 Record 9</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 10</Data1>
+    <Data2>Data2 Record 10</Data2>
+    <Data3>Data3 Record 10</Data3>
+  </NewDataElement>
+  <NewDataElement>
+    <Data1>Data1 Record 11</Data1>
+    <Data2>Data2 Record 11</Data2>
+    <Data3>Data3 Record 11</Data3>
+  </NewDataElement>
+</SampleData>

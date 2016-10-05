@@ -1,0 +1,93 @@
+// PButton1.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (PButton1.tlb) that will become a resource in
+// PButton1.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+// Define the valid ModalResult property values.
+typedef enum ModalType
+{
+   mrNone = -1L,
+   mrOK = 1L,
+   mrCancel = 2L,
+   mrAbort = 3L,
+   mrRetry = 4L,
+   mrIgnore = 5L,
+   mrYes = 6L,
+   mrNo = 7L,
+   mrOn = 8L,
+   mrOff = 9L,
+}MODALTYPE;
+
+// Define the valid StdButtonType property values.
+typedef enum StdButton
+{
+   None = 0L,
+   OK = 1L,
+   Cancel = 2L,
+   Abort = 3L,
+   Retry = 4L,
+   Ignore = 5L,
+   Yes = 6L,
+   No = 7L,
+   On = 8L,
+   Off = 9L,
+}STDBUTTON;
+
+[ uuid(E8A1F3B9-49AB-4C75-B2A8-64425AF127E1), version(1.3),
+  helpfile("PButton1.hlp"),
+  helpstring("PButton1 ActiveX Control module"),
+  control ]
+library PButton1Lib
+{
+
+importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CPButton1Ctrl
+
+	[ uuid(40506F07-9AB9-451C-AA07-59CAAFBD69DF),
+	  helpstring("Dispatch interface for PButton1 Control")]
+	dispinterface _DPButton1
+	{
+		properties:
+      [id(DISPID_CAPTION), helpstring("property Caption")] BSTR Caption;
+      [id(DISPID_ENABLED), helpstring("property Enabled")] VARIANT_BOOL Enabled;
+      [id(DISPID_FONT), helpstring("property Font")] IFontDisp*Font;
+      [id(1), helpstring("property ModalResult")] ModalType ModalResult;
+      [id(2), helpstring("property StdButtonType")] StdButton StdButtonType;
+      [id(3), helpstring("property OnOff")] VARIANT_BOOL OnOff;
+methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	};
+
+	//  Event dispatch interface for CPButton1Ctrl
+
+	[ uuid(7E29B88F-2AE0-4782-9ECE-60DDAB0D33AE),
+	  helpstring("Event interface for PButton1 Control") ]
+	dispinterface _DPButton1Events
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+         // Add the click method.
+         [id(DISPID_CLICK)] void Click();
+   };
+
+	//  Class information for CPButton1Ctrl
+
+	[ uuid(1B9F500E-F096-4168-92C1-F71EEFB53ADB),
+      // Change this entry to change the name of your control as
+      // it appears in the Customize Toolbox dialog box.
+	  helpstring("On/Off Pushbutton Control (MFC)"), control ]
+	coclass PButton1
+	{
+		[default] dispinterface _DPButton1;
+		[default, source] dispinterface _DPButton1Events;
+	};
+
+};

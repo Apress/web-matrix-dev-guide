@@ -1,0 +1,27 @@
+HKCR
+{
+	CompName.NameValues.1 = s 'NameValues Class'
+	{
+		CLSID = s '{34E40BB8-826C-4E8B-960F-6226A97105D6}'
+	}
+	CompName.NameValues = s 'NameValues Class'
+	{
+		CLSID = s '{34E40BB8-826C-4E8B-960F-6226A97105D6}'
+		CurVer = s 'CompName.NameValues.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {34E40BB8-826C-4E8B-960F-6226A97105D6} = s 'NameValues Class'
+		{
+			ProgID = s 'CompName.NameValues.1'
+			VersionIndependentProgID = s 'CompName.NameValues'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{D400B4FB-4FD5-4498-AADB-70C0766FFC6E}'
+		}
+	}
+}
